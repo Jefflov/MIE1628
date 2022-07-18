@@ -1,0 +1,25 @@
+{
+	"name": "RunEvery3mins",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 3,
+				"startTime": "2022-07-18T00:53:00",
+				"endTime": "2022-07-18T00:53:00",
+				"timeZone": "Eastern Standard Time"
+			}
+		}
+	}
+}
