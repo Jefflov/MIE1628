@@ -1,0 +1,27 @@
+{
+	"name": "FileInUSE",
+	"properties": {
+		"description": "This trigger is triggered when a file is created/deleted in the container mie1628, directory sync of US East, or storage account samie1628",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "USEtoWestEurope",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/mie1628/blobs/'sync/'",
+			"blobPathEndsWith": "'sync'",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/5e3290d1-4bb1-480d-8da8-6e1ccf3e878d/resourceGroups/RG_MIE1628/providers/Microsoft.Storage/storageAccounts/samie1628",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
