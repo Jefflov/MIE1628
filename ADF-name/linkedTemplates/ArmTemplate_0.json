@@ -528,6 +528,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/mie1628/blobs/",
+					"blobPathEndsWith": "'.csv'",
 					"ignoreEmptyBlobs": false,
 					"scope": "[parameters('FileInUSE_properties_typeProperties_scope')]",
 					"events": [
@@ -560,6 +561,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/mie1628/blobs/",
+					"blobPathEndsWith": "'.csv'",
 					"ignoreEmptyBlobs": false,
 					"scope": "[parameters('FileInWestEurope_properties_typeProperties_scope')]",
 					"events": [
