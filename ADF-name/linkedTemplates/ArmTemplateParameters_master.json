@@ -20,11 +20,11 @@
 		"DataLakeStorageGen2USE_properties_typeProperties_url": {
 			"value": "https://samie1628.dfs.core.windows.net/"
 		},
-		"FileInWestEurope_properties_typeProperties_scope": {
-			"value": "/subscriptions/5e3290d1-4bb1-480d-8da8-6e1ccf3e878d/resourceGroups/RG_MIE1628/providers/Microsoft.Storage/storageAccounts/samie1628westeurope"
-		},
 		"FileInUSE_properties_typeProperties_scope": {
 			"value": "/subscriptions/5e3290d1-4bb1-480d-8da8-6e1ccf3e878d/resourceGroups/RG_MIE1628/providers/Microsoft.Storage/storageAccounts/samie1628"
+		},
+		"FileInWestEurope_properties_typeProperties_scope": {
+			"value": "/subscriptions/5e3290d1-4bb1-480d-8da8-6e1ccf3e878d/resourceGroups/RG_MIE1628/providers/Microsoft.Storage/storageAccounts/samie1628westeurope"
 		},
 		"containerUri": {
 			"value": ""
