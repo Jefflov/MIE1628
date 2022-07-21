@@ -1,6 +1,7 @@
 {
-	"name": "FileIn",
+	"name": "FileInWestEurope",
 	"properties": {
+		"description": "This trigger is triggered when a file is created/deleted in the container mie1628, directory sync in west europe",
 		"annotations": [],
 		"runtimeState": "Started",
 		"pipelines": [
