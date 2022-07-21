@@ -15,6 +15,26 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
 		},
+		"DataLakeStorageGen2USE_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DataLakeStorageGen2USE'"
+		},
+		"WestEurope_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'WestEurope'"
+		},
+		"DataLakeStorageGen2USE_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://samie1628.dfs.core.windows.net/"
+		},
+		"FileInWestEurope_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/5e3290d1-4bb1-480d-8da8-6e1ccf3e878d/resourceGroups/RG_MIE1628/providers/Microsoft.Storage/storageAccounts/samie1628westeurope"
+		},
+		"FileInUSE_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/5e3290d1-4bb1-480d-8da8-6e1ccf3e878d/resourceGroups/RG_MIE1628/providers/Microsoft.Storage/storageAccounts/samie1628"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -47,6 +67,21 @@
 					},
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"
+					},
+					"DataLakeStorageGen2USE_accountKey": {
+						"value": "[parameters('DataLakeStorageGen2USE_accountKey')]"
+					},
+					"WestEurope_connectionString": {
+						"value": "[parameters('WestEurope_connectionString')]"
+					},
+					"DataLakeStorageGen2USE_properties_typeProperties_url": {
+						"value": "[parameters('DataLakeStorageGen2USE_properties_typeProperties_url')]"
+					},
+					"FileInWestEurope_properties_typeProperties_scope": {
+						"value": "[parameters('FileInWestEurope_properties_typeProperties_scope')]"
+					},
+					"FileInUSE_properties_typeProperties_scope": {
+						"value": "[parameters('FileInUSE_properties_typeProperties_scope')]"
 					}
 				}
 			},
