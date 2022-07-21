@@ -1,0 +1,20 @@
+{
+	"name": "USEdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataLakeStorageGen2USE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
