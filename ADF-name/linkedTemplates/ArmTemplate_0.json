@@ -559,7 +559,6 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/mie1628/blobs/'sync/'",
-					"blobPathEndsWith": "'sync'",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('FileInWestEurope_properties_typeProperties_scope')]",
 					"events": [
@@ -592,7 +591,6 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/mie1628/blobs/'sync/'",
-					"blobPathEndsWith": "'sync'",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('FileInUSE_properties_typeProperties_scope')]",
 					"events": [
