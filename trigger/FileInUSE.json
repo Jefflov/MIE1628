@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "This trigger is triggered when a file is created/deleted in the container mie1628, directory sync of US East, or storage account samie1628",
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -14,7 +14,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/mie1628/blobs/'sync/'",
+			"blobPathBeginsWith": "/mie1628/blobs/",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/5e3290d1-4bb1-480d-8da8-6e1ccf3e878d/resourceGroups/RG_MIE1628/providers/Microsoft.Storage/storageAccounts/samie1628",
 			"events": [
